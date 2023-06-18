@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Unique Character Counter</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	
+	<style>
+	textarea 
+	{
+		resize: none;
+		width: 100%;
+		height: 200px;
+		font-size: 16px;
+		font-family: Arial, sans-serif;
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+
+	.btn 
+	{
+		background-color: #4CAF50;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-top: 10px;
+	}
+
+	.result 
+	{
+		margin-top: 10px;
+		font-size: 16px;
+		font-family: Arial, sans-serif;
+		color: #666;
+	}
+	</style>
+	</head>
+
+	<body>
+	<div>
+		<textarea id="myTextarea"></textarea>
+		<button class="btn" onclick="getUnique()">Get Unique Character</button>
+		<div class="result" id="myResult"></div>
+	</div>
+
+	<script>
+		function getUnique() 
+		{
+			const textarea = document.getElementById("myTextarea");
+			const result = document.getElementById("myResult");
+			const text = textarea.value;
+		
+			// Use Set to get unique characters
+			const uniqueChars = new Set(text);
+
+			// Display unique characters
+			result.textContent = "Unique characters: "+ Array.from(uniqueChars).join(" ");
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Character Counter</title>
+	<style>
+	textarea
+	{	
+		resize: none;
+		width: 100%;
+		height: 200px;
+		font-size: 16px;
+		font-family: Arial, sans-serif;
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+	.counter 
+	{
+		float: right;
+		font-size: 14px;
+		color: #666;
+		margin-top: 5px;
+	}
+	.limit 
+	{
+		color: #ff0000;
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<textarea id="myTextarea" maxlength="100"></textarea>
+		<div class="counter">
+		<span id="charCount">100</span> characters remaining (<span class="limit">0</span> limit reached)
+		</div>
+	</div>
+
+	<script>
+		const textarea = document.getElementById("myTextarea");
+		const charCount = document.getElementById("charCount");
+		const limit = document.querySelector(".limit");
+	
+		// Set initial character count
+		charCount.textContent = textarea.maxLength;
+		limit.textContent = textarea.maxLength - textarea.value.length;
+	
+		// Add event listener for textarea input
+		textarea.addEventListener("input", function() 
+		{
+			const count = textarea.maxLength - textarea.value.length;
+	
+			// Update character count
+			charCount.textContent = count;
+	
+			// Check if character limit is reached
+			if (count === 0) 
+			{
+				textarea.value = textarea.value.substring(0, textarea.maxLength);
+			}
+	
+			// Update limit reached indicator
+			limit.textContent = count;
+			limit.classList.toggle("limit", count === 0);
+		});
+	</script>
+</body>
+</html>

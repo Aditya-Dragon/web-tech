@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication Table</title>
+  </head>
+
+  <body>
+    <h1>Multiplication Table</h1>
+    <p>Please enter the number of rows and columns</p>
+    
+    <input type="text" id="rows-input" placeholder="numbers to multiply">
+    <input type="text" id="cols-input" placeholder="upto number">
+    <button onclick="createTable()">Create Table</button>
+    <br>
+    <br>
+
+    <table id="table"></table>
+
+    <script>
+      function createTable() 
+      {
+        
+        var rows = document.getElementById("rows-input").value;
+        var cols = document.getElementById("cols-input").value;
+
+        
+        rows = parseInt(rows);
+        cols = parseInt(cols);
+
+        
+        var table = document.getElementById("table");
+
+        table.innerHTML = "";
+
+        
+        for (var i = 0; i < rows; i++) 
+        {
+          var row = table.insertRow(i);
+          for (var j = 0; j < cols; j++) 
+          {
+            var cell = row.insertCell(j);
+            cell.innerHTML = (i + 1) * (j + 1);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

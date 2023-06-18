@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap');
+body{
+    font-family: 'Comme', sans-serif;
+}
+
+.button{
+    width: 60px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color:#97DEFF;
+}
+.row
+{
+    margin: 8px 0;
+}
+.input
+{
+    background-color: #AA77FF;
+    font-size:20px;
+    padding: 17px 8px;
+    border-radius: 9px;
+    border: 2px solid black; 
+}
+.container{
+    border: 3px solid black;
+    border-radius: 2em;
+}

@@ -1,0 +1,23 @@
+.bg-green
+{
+    background-color: green;
+}
+.text-center{
+    text-align: center;
+}
+.mx-auto{
+    margin: auto;
+}
+.flex{
+    display: flex;
+} 
+.flex-col{
+    flex-direction: column;
+    width: 323px;
+    padding: 15px 0;
+    background-color: #ECF2FF;
+} 
+.items-center
+{
+    align-items: center;
+}

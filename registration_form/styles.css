@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  background-color: #f2f2f2;
+}
+
+label, input, select {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  width: 90%;
+  padding: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+body{
+    background-color: #B4E0FE
+}
+hr{
+    background-color: #B9F0BC;
+    border-width: 5px;
+    border-style: none;
+    border-top-style: dotted;
+    border-color:white;
+    width : 10%;
+}
+table{
+    padding: 2px;
+    border-spacing: 15px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Age Restricted Website</title>
+  </head>
+  
+  <body>
+    <h1>Welcome to the Age Restricted Website</h1>
+    <p>Please enter your age to continue:</p>
+    <input type="text" id="age-input">
+    <button onclick="checkAge()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+      function checkAge() 
+      {
+        // Get the age input value
+        var ageInput = document.getElementById("age-input").value;
+
+        // Check if the age is less than 18
+        if (ageInput < 18) 
+        {
+          // Display the "Sorry" message
+          document.getElementById("message").innerHTML =
+            "Sorry, you are not authorized to enter.";
+        } 
+        else 
+        {
+          // Display the "Welcome" message
+          document.getElementById("message").innerHTML =
+            "Hello, welcome to the site.";
+        }
+      }
+    </script>
+  </body>
+</html>

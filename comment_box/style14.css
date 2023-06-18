@@ -1,0 +1,15 @@
+body 
+{
+	background: blue linear-gradient(90deg, aqua, blue, white) fixed;
+}
+#comment-box, #post 
+{
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+}
+#post:hover
+{
+	background-color: pink;
+	font-size: 20px;
+}
