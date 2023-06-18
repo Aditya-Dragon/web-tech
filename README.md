@@ -1,2 +1,2 @@
 # web-tech
-My works in Web technology mainly HTML, CSS, JS
+My works in Web technology mainly using HTML, CSS, JS
